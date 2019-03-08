@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    <header class="topo_geral">
+        <div class="topo_conteudo">
+            <h1>Aprendendo Formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="formulario_cadastro">
+            <form action="" method="POST">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" placeholder="Ex. Silvio Santos" maxlength="50" required>
+                <br><br>
+                <label for="e-mail">E-mail</label>
+                <input type="text" name="e-mail" placeholder="Ex. silvio.santos@gmail.com" maxlength="50" required>
+                <br><br>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="telefone" placeholder="(00)00000-0000">
+                <br><br>
+                <label for="password">Senha</label>
+                <input type="password" name="password" placeholder="Senha">
+                <br><br>
+                Gênero
+                <br>
+                Masculino:
+                <input type="radio" name="genero" value="Masculino">
+                Feminino
+                <input type="radio" name="genero" value="Feminino">
+                Outros:
+                <input type="radio" name="genero" value="Outros">
+                <br>
+                <select name="estado" required>
+                    <option value="" disabled selected>Selecione seu estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espirito Santo</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </select>
+                <br>
+                <label for="termos">Eu aceito os termos</label>
+                <input type="checkbox" name="termos" value="aceito" required>
+                <br>
+                <label for="cor">Selecione a cor</label>
+                <input type="color" name="cor">
+                <br>
+                <input type="range" name="raio" min=0 max="8">
+                <br>
+
+                <br>
+                <input type="date" name="data" max="2019-02-21">
+                <br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
